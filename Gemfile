@@ -31,5 +31,6 @@ gem 'sqlite3'
 #   gem 'webrat'
 # end
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', :github => 'charliesome/better_errors'
+  gem "binding_of_caller"
 end
