@@ -17,7 +17,7 @@ Depot::Application.configure do
   # Mailer Settings
   #
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
   # Use SMTP & configure it
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
@@ -25,7 +25,7 @@ Depot::Application.configure do
     :port    => 587,
     :domain  => "dwz.mygbiz.com",
     :authentication => "plain",
-    :user_name => "dog",
+    :user_name => "dog@dwz.mygbiz.com",
     :password => "foofoobarbar",
     :enable_starttls_auto => true
   }
