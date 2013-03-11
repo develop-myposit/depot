@@ -39,5 +39,21 @@ module Depot
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+   
+    #
+    # Configure SMTP and action mailer
+    #
+    config.action_mailer.raise_delivery_errors = true
+    # Use SMTP & configure it
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+        :address => "smtp.gmail.com",
+        :port => 587,
+        :domain => "dwz.mygbiz.com",
+        :authentication => "plain",
+        :user_name => "dog@dwz.mygbiz.com",
+        :password => "foofoobarbar",
+        :enable_starttls_auto => true
+        }
   end
 end
