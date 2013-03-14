@@ -6,7 +6,7 @@ gem "rb-readline", "~> 0.4.2"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -35,7 +35,7 @@ group :development do
   gem "binding_of_caller"
 end
 
-group :production do
-  gem 'mysql'
-end
+# group :production do
+#  gem 'pg'
+# end
 
