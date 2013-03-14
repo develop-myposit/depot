@@ -34,3 +34,8 @@ group :development do
   gem 'better_errors', :github => 'charliesome/better_errors'
   gem "binding_of_caller"
 end
+
+group :production do
+  gem 'mysql'
+end
+
